@@ -1,0 +1,21 @@
+/*
+estilos perfil
+*/
+.header-portada-perfil{
+    height: 170px;
+    padding: 12px;
+    background: rgb(72, 177, 136);
+
+  }
+  .foto-perfil{
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    
+  }
+  .user-name{
+      text-align:start;
+      font-size: 20px;
+      margin-top: 20px;
+      color: #fff;
+  }

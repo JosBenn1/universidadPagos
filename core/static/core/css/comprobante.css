@@ -1,0 +1,23 @@
+#pagos {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  #pagos td, #pagos th {
+    border: 1px solid hsl(0, 0%, 87%);
+    padding: 8px;
+  }
+  
+  #pagos tr:nth-child(even){background-color: #f2f2f2;}
+  
+  #pagos tr:hover {background-color: rgba(221, 221, 221, 0.925);}
+  
+  #pagos th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #21a57d;
+    color: white;
+  }
+  

@@ -1,0 +1,39 @@
+{% extends 'core/base.html' %}
+
+{% load static %}
+
+{% block title %}Inicio{% endblock %}
+
+{% block content %}
+<div>
+    <h1>Subir Comprobante</h1>
+</div>
+<div>
+    <form >
+      <label for="Motivo">Motivo</label>
+      <input type="text" id="motivo" name="Motivo" placeholder="Motivo">
+      
+      <label for="Descipcion">Descipciòn</label>
+      <input type="text" id="descripcion" name="Descipciòn" placeholder="Descipciòn">
+      
+      <img class="foto-perfil" src="" >
+      <button class="btn btn-primary " type="button">Seleccionar el Comprobante</button>
+      <input type="submit" value="Subir">
+    </form>
+</div>
+<div >
+  <table id="pagos">
+    <tr>
+        <th>Motivo</th>
+        <th>Descripciòn</th>
+        <th>Estado</th>
+      </tr>
+      <tr>
+        <td>Pago Cuatrimestral</td>
+        <td>8 cuatrimestre</td>
+        <td>pagado</td>
+      </tr>
+  </table>
+</div>
+
+{% endblock %}

@@ -1,0 +1,63 @@
+{% extends 'core/base.html' %}
+
+{% load static %}
+
+{% block title %}Inicio{% endblock %}
+
+{% block content %}
+ <div>
+ <h1>GENERAR ORDEN DE PAGO</h1>
+ </div>
+
+<div>
+  <form >
+    <label for="matricula">Matricula</label>
+    <input type="text" id="matricula" name="Matricula" placeholder="Matricula">
+    
+    <label for="nombre">Nombre(s)</label>
+    <input type="text" id="nombre" name="Nombre" placeholder="Nombre(s)">
+    
+    <label for="apellidos">Apellidos</label>
+    <input type="text" id="apellidos" name="Apellidos" placeholder="Apellidos">
+
+    <label for="country">Tipo de escolaridad</label>
+    <select id="escolaridad" name="escolaridad">
+      <option value="">Cuatrimestre</option>
+      <option value="">Semestre</option>
+    </select>
+
+     <label for="grado">Grado en el que te encuentras </label>
+    <select id="grado" name="grado">
+      <option value="">1</option>
+      <option value="">3</option>
+    </select>
+
+    <label for="motivo">Motivo</label>
+    <input type="text" id="motivo" name="MotivoPago" placeholder="Motivo de Pago">
+    
+    <label for="descripción">Descripción</label>
+    <input type="text" id="descripción" name="descripción" placeholder="Descripción">
+    
+
+    <label for="acredor-beca">Acredor a Beca</label>
+    <input type="text" id="acredor-beca" name="Acredor-Beca" placeholder="Acredor a Beca">
+
+    <label for="tipo-beca">Tipo de Beca</label>
+    <input type="text" id="tipo-beca" name="Acredor-Beca" placeholder="Tipo de Beca">
+<br>
+<br>
+    <label for="porcentaje-beca">Porcentaje de Beca</label>
+    <input type="number" id="porcentaje-beca" name="Acredor-Beca" placeholder="Porcentaje de Beca">
+<br>
+<br>
+    <label for="fecha">Fecha</label>
+    <input type="date" id="fecha" name="Fecha" placeholder="Fecha">
+    <br>
+    <br>
+    <label for="descripción">Cantidad a Pagar</label>
+    <input type="number" id="pago" name="pago" placeholder="Cantidad a Pagar">
+   
+    <input type="submit" value="Obtener Orden">
+  </form>
+</div>
+{% endblock %}
